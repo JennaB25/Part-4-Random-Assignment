@@ -54,14 +54,17 @@ namespace Part_4_Random_Assignment
 
             //Part Three: Random Decimal Numbers
             Console.WriteLine("Now lets find some random decimal numbers...");
-            Console.ReadLine();            
+            Console.ReadLine();
             double randOne = generator.NextDouble();
-            int randTwo = generator.NextDouble();
-            int randThree = generator.NextDouble();
+            double randTwo = generator.NextDouble();
+            double randThree = generator.NextDouble();
+            int ranOne = generator.Next(one, two);
+            int ranTwo = generator.Next(one, two);
+            int ranThree = generator.Next(one, two);
             Console.WriteLine("The three random decimal numbers are:");
-            Console.WriteLine($"{randOne}  {randTwo}  {randThree}");
+            Console.WriteLine($"{randOne:N3} + {ranOne:N3}  {randTwo:N3} + {ranTwo:N3}  {randThree:N3} + {ranThree:N3}");
             Console.WriteLine("");
-            //
+            
         }
     }
 }
