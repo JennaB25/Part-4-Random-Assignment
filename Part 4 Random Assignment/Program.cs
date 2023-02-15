@@ -16,6 +16,7 @@ namespace Part_4_Random_Assignment
             int one = Convert.ToInt32(inputOne);
             int two = Convert.ToInt32(inputTwo);
             two = (two - 1);
+            one = (one + 1);
             int numberOne = generator.Next(one, two);
             int numberTwo = generator.Next(one, two);
             int numberThree = generator.Next(one, two);
@@ -61,8 +62,14 @@ namespace Part_4_Random_Assignment
             int ranOne = generator.Next(one, two);
             int ranTwo = generator.Next(one, two);
             int ranThree = generator.Next(one, two);
+            randOne = randOne + ranOne;
+            randTwo = randTwo + ranTwo;
+            randThree = randThree + ranThree;
+            //Console.WriteLine("How many decimal places do you want?");
+            //string inputThree = Console.ReadLine();
+            //int decimalPlace = Convert.ToInt32(inputThree);
             Console.WriteLine("The three random decimal numbers are:");
-            Console.WriteLine($"{randOne:N3} + {ranOne:N3}  {randTwo:N3} + {ranTwo:N3}  {randThree:N3} + {ranThree:N3}");
+            Console.WriteLine($"{randOne:N2}  {randTwo:N2}  {randThree:N2}");
             Console.WriteLine("");
             
         }
