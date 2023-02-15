@@ -13,6 +13,25 @@ namespace Part_4_Random_Assignment
             Console.WriteLine("will show you five random numbers in that range:");
             string inputOne = Console.ReadLine();
             string inputTwo = Console.ReadLine();
+            int max = int.MaxValue;
+            int min = int.MinValue;
+            
+            if (one == max)
+            {
+                inputOne = Console.ReadLine();
+            }
+            else if (one == min)
+            {
+                inputOne = Console.ReadLine();
+            }
+            if (two == max)
+            {
+                inputTwo = Console.ReadLine();
+            }
+            else if (two == min)
+            {
+                inputTwo = Console.ReadLine();
+            }
             int one = Convert.ToInt32(inputOne);
             int two = Convert.ToInt32(inputTwo);
             two = (two - 1);
@@ -65,9 +84,6 @@ namespace Part_4_Random_Assignment
             randOne = randOne + ranOne;
             randTwo = randTwo + ranTwo;
             randThree = randThree + ranThree;
-            //Console.WriteLine("How many decimal places do you want?");
-            //string inputThree = Console.ReadLine();
-            //int decimalPlace = Convert.ToInt32(inputThree);
             Console.WriteLine("The three random decimal numbers are:");
             Console.WriteLine($"{randOne:N2}  {randTwo:N2}  {randThree:N2}");
             Console.WriteLine("");
