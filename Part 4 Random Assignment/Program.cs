@@ -7,31 +7,14 @@ namespace Part_4_Random_Assignment
         static void Main(string[] args)
         {
             Random generator = new Random();
-
+            
             //Part One: Random Integers
             Console.WriteLine("Pick two numbers in a range and I");
             Console.WriteLine("will show you five random numbers in that range:");
+            Console.WriteLine("Number One:");
             string inputOne = Console.ReadLine();
-            string inputTwo = Console.ReadLine();
-            int max = int.MaxValue;
-            int min = int.MinValue;
-            
-            if (one == max)
-            {
-                inputOne = Console.ReadLine();
-            }
-            else if (one == min)
-            {
-                inputOne = Console.ReadLine();
-            }
-            if (two == max)
-            {
-                inputTwo = Console.ReadLine();
-            }
-            else if (two == min)
-            {
-                inputTwo = Console.ReadLine();
-            }
+            Console.WriteLine("Number Two:");
+            string inputTwo = Console.ReadLine(); 
             int one = Convert.ToInt32(inputOne);
             int two = Convert.ToInt32(inputTwo);
             two = (two - 1);
@@ -70,10 +53,12 @@ namespace Part_4_Random_Assignment
             Console.WriteLine("");
             int rollTwo = generator.Next(1, 6);
             Console.WriteLine($"Dice Two:     {rollTwo}");
+            Console.WriteLine($"The sum of the rolls is: {rollOne + rollTwo}");
             Console.WriteLine("");
 
             //Part Three: Random Decimal Numbers
             Console.WriteLine("Now lets find some random decimal numbers...");
+            Console.WriteLine("Press Enter");
             Console.ReadLine();
             double randOne = generator.NextDouble();
             double randTwo = generator.NextDouble();
